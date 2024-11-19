@@ -209,28 +209,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 // Dark/Light Mode
-document.addEventListener('DOMContentLoaded', function () {
-  const toggleButton = document.getElementById('theme-toggle');
-  const icon = toggleButton.querySelector('ion-icon');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const toggleButton = document.getElementById('theme-toggle');
+//   const icon = toggleButton.querySelector('ion-icon');
 
-  // Load the current theme from local storage
-  const currentTheme = localStorage.getItem('theme') || 'light-mode';
-  document.body.classList.add(currentTheme);
+//   // Load the current theme from local storage
+//   const currentTheme = localStorage.getItem('theme') || 'light-mode';
+//   document.body.classList.add(currentTheme);
 
-  // Set the initial icon
-  icon.name = currentTheme === 'light-mode' ? 'moon-outline' : 'sunny-outline';
+//   // Set the initial icon
+//   icon.name = currentTheme === 'light-mode' ? 'moon-outline' : 'sunny-outline';
 
-  toggleButton.addEventListener('click', function () {
-    if (document.body.classList.contains('light-mode')) {
-      document.body.classList.remove('light-mode');
-      document.body.classList.add('dark-mode');
-      icon.name = 'sunny-outline';
-      localStorage.setItem('theme', 'dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-      document.body.classList.add('light-mode');
-      icon.name = 'moon-outline';
-      localStorage.setItem('theme', 'light-mode');
-    }
-  });
-});
+//   toggleButton.addEventListener('click', function () {
+//     if (document.body.classList.contains('light-mode')) {
+//       document.body.classList.remove('light-mode');
+//       document.body.classList.add('dark-mode');
+//       icon.name = 'sunny-outline';
+//       localStorage.setItem('theme', 'dark-mode');
+//     } else {
+//       document.body.classList.remove('dark-mode');
+//       document.body.classList.add('light-mode');
+//       icon.name = 'moon-outline';
+//       localStorage.setItem('theme', 'light-mode');
+//     }
+//   });
+// });
