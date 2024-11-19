@@ -747,7 +747,7 @@
 
       <!-- #PORTFOLIO -->
 
-      <article class="portfolio" data-page="portfolio">
+      <!-- <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -806,7 +806,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Wordpress development</button>
+                <button data-select-item>Web development</button>
               </li>
 
               <li class="select-item">
@@ -1075,9 +1075,167 @@
 
         </section>
 
-      </article>
+      </article> -->
 
 
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+      
+          <!-- Danh sách nút lọc -->
+          <ul class="filter-list" role="tablist" aria-label="Filter projects by category">
+      
+            <li class="filter-item">
+              <button class="active" data-filter-btn aria-selected="true">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn aria-selected="false">Software development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn aria-selected="false">Data analysis</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn aria-selected="false">Web development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn aria-selected="false">Wordpress development</button>
+            </li>
+      
+          </ul>
+      
+          <!-- Menu chọn danh mục -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select aria-haspopup="true" aria-expanded="false" aria-label="Select project category">
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+      
+            <ul class="select-list" role="listbox" hidden>
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Software development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Data analysis</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Wordpress development</button>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Danh sách dự án -->
+          <ul class="project-list">
+      
+            <!-- Software development -->
+            <li class="project-item active" data-filter-item data-category="software development">
+              <a href="https://webredep.net/" aria-label="Work Management - Software development project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/manage.png" alt="Work Management project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Work Management</h3>
+                <p class="project-category">Software development</p>
+              </a>
+            </li>
+      
+            <!-- Web development -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://shopfashions.netlify.app/" aria-label="Shop Fashions - Web development project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/shop.png" alt="Shop Fashions project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Shop Fashions</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://w3bands.netlify.app/" aria-label="Band Music - Web development project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/band.png" alt="Band Music project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Band Music</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <!-- Wordpress development -->
+            <li class="project-item active" data-filter-item data-category="wordpress development">
+              <a href="https://baltic.vn/" aria-label="Blatic - Wordpress development project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/blatic.png" alt="Blatic project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Blatic</h3>
+                <p class="project-category">Wordpress development</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="wordpress development">
+              <a href="https://celapaw.vn/" aria-label="Cela Paw - Wordpress development project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/celapaw.png" alt="Cela Paw project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Cela Paw</h3>
+                <p class="project-category">Wordpress development</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="wordpress development">
+              <a href="https://tayha.net/" aria-label="Tây Hà - Wordpress development project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/tayha.png" alt="Tây Hà project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Tây Hà</h3>
+                <p class="project-category">Wordpress development</p>
+              </a>
+            </li>
+      
+            <!-- Data analysis -->
+            <li class="project-item active" data-filter-item data-category="data analysis">
+              <a href="#" aria-label="Project - Data analysis">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/coming-soon.png" alt="Coming Soon project image" loading="lazy">
+                </figure>
+                <h3 class="project-title">Project</h3>
+                <p class="project-category">Data analysis</p>
+              </a>
+            </li>
+      
+          </ul>
+      
+        </section>
+      
+      </article>      
 
 
 
