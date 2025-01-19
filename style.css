@@ -1323,9 +1323,9 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 @media (max-width: 580px) {
 
-  .navbar-item:last-child {
+  /* .navbar-item:last-child {
     display: none;
-  }
+  } */
 
   .testimonials-avatar-box img { padding:10px }
 
