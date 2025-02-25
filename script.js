@@ -119,6 +119,19 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+const selectButton = document.querySelector('.filter-select');
+const selectList = document.querySelector('.select-list');
+
+selectButton.addEventListener('click', toggleMenu);
+selectButton.addEventListener('touchstart', toggleMenu);
+
+function toggleMenu(e) {
+  e.preventDefault();
+  const isExpanded = selectButton.getAttribute('aria-expanded') === 'true';
+  selectButton.setAttribute('aria-expanded', !isExpanded);
+  selectList.hidden = isExpanded;
+}
+
 
 
 // contact form variables
